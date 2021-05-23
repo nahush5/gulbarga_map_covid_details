@@ -1,0 +1,59 @@
+// Area Chart
+.chart-area {
+  position: relative;
+  height: 10rem;
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    height: 20rem;
+  }
+}
+
+// Bar Chart
+.chart-bar {
+  position: relative;
+  height: 10rem;
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    height: 20rem;
+  }
+}
+
+// Pie Chart
+.chart-pie {
+  position: relative;
+  height: 15rem;
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    height: calc(20rem - 43px) !important;
+  }
+}
+
+// svg {
+//   height: 50vw;
+// }
+// text {
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   background: rgba(29, 106, 154, 0.72);
+//   color: #fff;
+//   visibility: hidden;
+//   opacity: 0;
+
+//   /* transition effect. not necessary */
+//   transition: opacity 0.2s, visibility 0.2s;
+// }
+// /*path:hover {fill: #eee;}*/
+// path:hover,
+// circle:hover,
+// text {
+//   stroke: #d3d3d3 !important;
+//   stroke-width: 2px;
+//   stroke-linejoin: round;
+//   fill: #002868 !important;
+//   cursor: pointer;
+//   visibility: visible;
+//   opacity: 1;
+// }
