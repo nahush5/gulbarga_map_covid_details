@@ -183,6 +183,10 @@
                 let i;
                 for (i = 1; i < data.length; i++) {
 
+                    if (name != data[i]["gsx$_cn6ca"]["$t"]) {
+                        continue;
+                    }
+
                     if (num == 0) {
                         return data[i]["gsx$_cn6ca"]["$t"]; // taluks
                     } else if (num == 1) {
@@ -218,9 +222,9 @@
                             // "h5 mb-0 font-weight-bold text-gray-800"
         var svg = document.getElementById("gulbarga");
         var arrHas = svg.getElementsByClassName("has ");
-        var list = document.querySelectorAll("h5 mb-0 font-weight-bold text-gray-800");
+        var list = document.getElementsByClassName("h5 mb-0 font-weight-bold text-gray-800");
 
-        document.write(list[0])
+        // document.write(list[0])
         var box = list[0];
 
         for(idx=0; idx < arrHas.length; idx++){
